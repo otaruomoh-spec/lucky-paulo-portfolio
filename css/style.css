@@ -862,3 +862,28 @@ html {
     justify-content: center;
   }
 }
+/* MATRIX BACKGROUND */
+#matrix {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+/* Keep portfolio content visible */
+body {
+  position: relative;
+  isolation: isolate;
+}
+
+main, header, footer {
+  position: relative;
+  z-index: 1;
+}
+/* REMOVE HAMBURGER MENU COMPLETELY */
+.menu-toggle {
+  display: none !important;
+}
